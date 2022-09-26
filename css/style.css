@@ -1,0 +1,300 @@
+html body{
+    height: 100%;width: 100%;margin: 0px;
+    background-color: rgb(78, 121, 140);
+    
+}
+
+@font-face{
+    font-family: "bttf";
+    src: url("../../../12 Animation/sup/BTTF.ttf");
+}
+
+
+.principale{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-color: white;
+    background-repeat: no-repeat;
+
+}
+.banière{
+    display: grid;
+    grid-template-columns: [line1]25% [line2] 75%[line3];
+    grid-template-rows: [line1]55% [line2]45%[line3] ;
+    height: 300px;
+    width: 60%;
+    margin-left: 50px;
+    border-radius: 25px;
+    background: linear-gradient(to bottom right,rgb(3, 11, 100), rgb(0, 43, 153),rgb(3, 11, 100));
+    border: 3px;
+
+
+}
+.banière:hover{
+    animation: banière;
+    animation-duration: 20s;
+    transition-timing-function:ease-out, cubic-bezier(0,.44,.66,1.03)
+
+}
+@keyframes banière {
+    0%{
+        transform: rotateY(36000deg) ;
+    }
+    50%{
+        transform: rotateY(1800deg) ;
+
+    }
+
+    100%{
+        transform: rotateY(0deg) ;
+
+    }
+
+   
+    
+    
+    
+}
+
+
+.per{
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: rotateY(45deg);
+    padding: auto;
+    background: linear-gradient(rgb(255, 68, 0), rgb(255, 234, 0),rgb(255, 68, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+.ver{
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: rotateY(45deg);
+    padding: auto;
+    background: linear-gradient(rgb(255, 68, 0), rgb(255, 234, 0),rgb(255, 68, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+
+
+#retour{
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: left;
+    margin-top: 100px;
+    position: relative;
+    perspective: 1000px;
+
+
+}
+#versle{
+    display: flex;
+    justify-content: right;
+    grid-column: 2/3;
+    grid-row: 2;
+    justify-content: left;
+    margin-left: 20px;
+
+    
+}
+#futur{
+    grid-column: 2;
+    grid-row: 2/3;
+    justify-content: left;
+    margin-left: 100px;
+    
+}
+
+
+.bttf{
+    display: flex;
+    justify-content: center;
+    font-family: "bttf","time New Roman";
+    font-size: 4em;
+    background: linear-gradient(rgb(255, 68, 0), rgb(255, 234, 0),rgb(255, 68, 0));
+    -webkit-text-stroke: 0.1px turquoise;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+@font-face{
+    font-family: "smg";
+    src: url("../../12 Animation/sup/SuperMario256.ttf");
+}
+.banière2{
+    display:grid;
+    height: 300px;
+    width: 60%;
+    margin-left: 50px;
+    border-radius: 25px;
+    background: linear-gradient(to bottom left,rgb(1, 0, 78), rgb(0, 15, 71),rgb(51, 49, 196));
+    grid-template-rows: 5% 35% 20% 25% 15% ;
+    grid-template-columns: 33% 33% 34%;
+    box-shadow:10px 10px rgba(0, 0, 0, 0.611);
+}
+.banière2{
+    animation: banière2;
+    animation-duration: 10s;
+    transition-timing-function:ease-out, cubic-bezier(0,.44,.66,1.03)
+
+
+}
+@keyframes banière2{
+    0%{
+
+    }
+    10%{
+        margin: 0%;
+        scale:100%;
+        transform:translate(0px)
+    }
+    20%{
+        
+        transform: translate(700px);
+        scale:70%
+    }
+    30%{
+        
+        transform: translate(900px,50px);
+        scale:20%
+    }
+    25%{
+        transform: translate(700px);
+
+        scale:80%;
+    }
+    28%{
+        transform: translate(900px);
+
+        scale:20%
+    }
+    45%{
+        transform: translate(9000px,-5000px);
+        scale:20%;
+    }
+    
+
+    79%{
+        
+        scale: 0%;
+        
+        
+    }
+    100%{
+        scale:100%
+        
+    }
+}
+
+
+.smg{
+    
+    -webkit-text-stroke:5px rgb(158, 158, 158);
+    font-size: 4em;
+    font-family: "smg","time New Roman";
+    
+
+}
+#super{
+    margin-top: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    grid-row: 2;
+    grid-column: 2;
+
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+#mario{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(255, 0, 0), rgb(255, 151, 151));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    grid-row: 3;
+    grid-column: 2;
+    
+
+}
+#galaxy{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(1, 0, 90), rgb(42, 0, 87),rgb(1, 0, 90));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    grid-row: 4;
+    grid-column: 2;
+    
+
+}
+#block{
+
+    color:yellow;
+    font-size: 1em;
+}
+#block2{
+
+    color: rgb(136, 82, 46);
+    font-size: 1em;
+}
+#block3{
+
+    color: yellow;
+    font-size: 1em;
+}
+#block4{
+
+    color: rgb(136, 82, 46);
+    font-size: 1em;
+
+}
+#blocks{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 5;
+    
+}
+.banière3{
+    display:grid;
+    height: 300px;
+    width: 60%;
+    margin-left: 50px;
+    border-radius: 25px;
+    background: linear-gradient(to bottom left,rgb(1, 144, 89), rgb(85, 177, 123),rgb(39, 127, 7));
+    grid-template-rows: 50%;
+    grid-template-columns: 25% 50% 25%;
+    
+}
+#nom{
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    grid-row: 1;
+    grid-column: 2/3;
+    margin-left:100px;
+    align-items: flex-end;
+    font-size:1.5em;
+    -webkit-text-stroke:1px rgb(158, 158, 158);
+    text-shadow: 10px 5px;
+}
+
+
+
+
+
+
